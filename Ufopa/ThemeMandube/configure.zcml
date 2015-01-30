@@ -12,7 +12,7 @@
       name="default"
       title="Ufopa Tema Mandube"
       directory="profiles/default"
-      description="Extension profile for Projeto thema"
+      description="Thema Diazo - Portal Ufopa"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 

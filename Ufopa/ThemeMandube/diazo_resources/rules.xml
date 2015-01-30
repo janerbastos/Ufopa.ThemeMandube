@@ -38,7 +38,7 @@
              with rules that copy particular parts of the content into particular
              targets in your theme.
          -->
-        <after css:theme="body p" css:content="#visual-portal-wrapper" />
+        
 
     </rules>
 
