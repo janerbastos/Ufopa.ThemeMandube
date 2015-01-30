@@ -5,39 +5,49 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <!-- Apply the following rules to standard Plone pages -->
+
+    <!-- The default theme, used for standard Plone web pages -->
+    <theme href="index.html" css:if-content=".section-front-page" />
+    <theme href="comum.html" css:if-not-content=".section-front-page" />
+    <notheme if-path="@@manage-viewlets" />
+    <notheme if-path="@@overview-controlpanel" />
+    <notheme if="$ajax_load" />
+
     <rules css:if-content="#visual-portal-wrapper">
 
-        <theme href="index.html" />
+        <!-- Add meta tags -->
+        <drop css:theme="meta[http-equiv='Content-Type']" />
+        <drop css:content="meta[name='viewport']" />
+        
+        <drop css:content="link[href*='reset']" />
+        <drop css:content="link[href$='public.css']" />
+        <drop css:content="link[href$='columns.css']" />
+        <drop css:content="link[href$='forms.css']" />
+        <drop css:content="link[href$='portlets.css']" />
+        <drop css:content="link[href$='discussion.css']" />
+        <drop css:content="link[href$='controlpanel.css']" />
+        <drop css:content="link[href$='authoring.css']" />
+        <drop css:content="link[href$='ploneKss.css']" />
+        <drop css:content="link[href$='print.css']" />
+        <drop css:content="lisnk[href$='mobile.css']" />
+        <drop css:content="link[href*='base']" />
+        <drop css:content="link[href$='favicon.ico']" />
+        
+        <before content="/html/head/meta" css:theme="meta[name='viewport']" />
+        <before content="/html/head/base" theme="/html/head/title" />
+        <replace theme='/html/head/title' content='/html/head/title' />
 
-        <!-- Replace title with Plone's page title  -->
-        <replace css:theme="html head title" css:content="html head title" />
+        <!-- Copy style, script and link tags in the order they appear in the content -->
+        <after css:content="head link:not([href*='ploneCustom'])" theme="/html/head/title" />
+        <after content="/html/head/style | /html/head/script" theme="/html/head/title" />
+        <after css:content="head link[href*='ploneCustom']" theme-children="/html/head" />
 
-        <!-- Drop the favicon spec coming from content; we'll use the one in the theme. -->
-        <drop content="/html/head/link[@rel='shortcut icon']" />
+        <!-- Copy over the id/class attributes on the body tag.
+             This is important for per-section styling -->
+        <merge attributes="dir class" css:content="body" css:theme="body" />
 
-        <!-- Copy base tag from Plone -->
-        <before css:theme-children="html head" css:content="html head base" />
-
-        <!-- Copy link, style, meta tags from Plone head -->
-        <after css:theme-children="html head"
-               content="/html/head/link | /html/head/style | /html/head/meta" />
-
-        <!-- merge classes from Plone body with theme body -->
-        <merge attributes="class" css:theme="body" css:content="body" />
-
-        <!-- Copy script tags from Plone head to end of body -->
-        <after css:theme-children="html body" css:content="html head script" />
-
-        <!-- Move inline scripts in content to end of body -->
-        <drop css:content="body script" />
-        <after css:theme-children="html body" css:content="html body script" method="raw" />
-
-        <!-- Insert your own rules here -->
-
-        <!-- This rule pulls in the whole Plone layout. You'll typically replace this
-             with rules that copy particular parts of the content into particular
-             targets in your theme.
-         -->
+        <!-- Skip Links -->
+        <before css:content="#portal-header > p.hiddenStructure:first-child" css:theme-children="#portal-header" />
         
 
     </rules>
