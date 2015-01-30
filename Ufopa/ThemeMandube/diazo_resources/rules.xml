@@ -8,7 +8,7 @@
     <!-- Apply the following rules to standard Plone pages -->
 
     <!-- The default theme, used for standard Plone web pages -->
-    <theme href="index.html" css:if-content=".section-front-page" />
+    <theme href="index.html" />
     <!--<theme href="comum.html" css:if-not-content=".section-front-page" /> -->
     <notheme if-path="@@manage-viewlets" />
     <notheme if-path="@@overview-controlpanel" />
