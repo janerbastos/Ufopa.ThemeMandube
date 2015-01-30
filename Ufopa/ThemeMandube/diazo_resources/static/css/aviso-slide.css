@@ -1,0 +1,89 @@
+#banner-aviso a, #banner-aviso img{
+	margin: 0;
+	padding:0;
+	border: none;
+	outline:none;
+	list-style: none;
+	text-decoration:none;
+	}
+
+.aviso-box{
+	position: relative;
+	display: block;
+	}
+
+.aviso-box img{
+	display: block;
+	float: left;
+	width: 300px;
+	height: 250px;
+	border: 0;
+	}
+
+.aviso-box .floater{
+	display: inline;
+	float: right;
+	}
+
+/* ----------------------------------------------Navigation Buttons-------------------------------------*/
+
+/*
+
+Navigation dynamically created using: jquery.cycle.setup.js and jquery.cycle.min.js
+
+HTML Output:
+
+<div id="fsn">
+  <ul id="fs_pagination">
+    <li><a href="javascript:void()">1</a></li>
+    <li><a href="javascript:void()">2</a></li>
+    <li><a href="javascript:void()">3</a></li>
+    <li><a href="javascript:void()">4</a></li>
+    <li><a href="javascript:void()">5</a></li>
+  </ul>
+</div>
+
+*/
+
+#fsn-aviso{
+	height: 25px;
+	text-align: center;
+	z-index: 1000;
+	margin-top:-33px;
+	margin-left: 14px;
+	position: relative;
+	}
+
+#fsn-aviso ul{
+	position:relative;
+	margin:0 auto 0;
+	display:block;
+	width:75px;
+	height:20px;
+	padding:5px 0 0 0;
+	overflow:hidden;
+	list-style:none;
+	}
+
+#fsn-aviso ul li, #fsn-aviso ul li a{
+	display:block;
+	float:left;
+	width:15px;
+	height:15px;
+	margin:0 10px 0 0;
+	padding:0;
+	}
+
+#fsn-aviso ul li a{
+	float:none;
+	border:none;
+	margin:0;
+	outline:none;
+	text-indent:-5000px;
+	text-decoration:none;
+	background:url("../img/slide.png") 50% 50% no-repeat;
+	}
+
+#fsn-aviso .activeSlide{
+	background:url("../img/slide.png") 0% 50% no-repeat;
+	}

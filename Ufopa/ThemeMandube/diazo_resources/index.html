@@ -1,12 +1,152 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Theme template</title>
-    <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico" />
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Universidade Federal do Oeste do Pará</title>
 
-    <p>Replace this template with your own theme</p>
+    <!-- CSS Referência -->
+    <link href="css/style-comum.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="static/css/banner-slide.css" rel="banner"  />
+    <link rel="stylesheet" type="text/css" href="static/css/aviso-slide.css" rel="banner" />
+    <link rel="stylesheet" type="text/css" href="static/css/calendar.min.css" />
 
-</body>
+    <!-- JavaScript Referência -->
+    <script type="text/javascript" src="static/js/jquery-1.11.1.min.js" /></script>
+    <script type="text/javascript" src="static/js/jquery.cycle.min.js" /></script>
+    <script type="text/javascript" src="static/js/jquery.cycle.setup.js" /></script>
+    <script type="text/javascript" src="static/js/jquery.slidepanel.setup.js" /></script>
+    <script type="text/javascript" src="static/js/calendario.js" /></script>
+    <script type="text/javascript" src="static/js/calendar.min.js" /></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="static/css/IE8.css" />
+    <![endif]-->
+
+  </head>
+  <body>
+
+  	<div id="portal-container">
+  		<div id="portal-mainmenu">Portal Main Menu</div>
+  		<div id="portal-destaque">
+  			<div id="portal-banner">
+				<div id="banner-slide">
+		            <div class="banner_box"><img src="static/img/400x300.jpg" alt="" />
+						<div class="floater">
+							<h2>Reitora reúne-se com alunos do CFI</h2>
+							<p>Na tarde desta segunda-feira, 19, às 18h, a reitora Raimunda Monteiro reuniu-se com alunos do Centro de Formação Interdisciplinar (CFI) da UFOPA, no auditório do Prédio Anexo do Campus Amazônia...</p>
+							<p class="readmore"><a href="#">LEIA MAIS</a></p>
+						</div>
+		            </div>
+
+		            <div class="banner_box"><img src="static/img/400x300.jpg" alt="" />
+						<div class="floater">
+							<h2>Reitora reúne-se com alunos do CFI</h2>
+							<p>Na tarde desta segunda-feira, 19, às 18h, a reitora Raimunda Monteiro reuniu-se com alunos do Centro de Formação Interdisciplinar (CFI) da UFOPA, no auditório do Prédio Anexo do Campus Amazônia...</p>
+							<p class="readmore"><a href="#">LEIA MAIS</a></p>
+						</div>
+		            </div>
+		        </div>
+  			</div>
+  			<ul id="portal-menu">
+	  			<li><a href="#">SIG-UFOPA</a></li>
+	  			<li><a href="#">OUVIDORIA</a></li>
+	  			<li><a href="#">ÁREA DO SERVIDOR</a></li>
+	  			<li><a href="#">PROCESSO SELETIVO</a></li>
+	  			<li><a href="#">CONCURSOS PUBLÍCOS</a></li>
+	  			<li><a href="#">MULTICAMP</a></li>
+	  			<li><a href="#">BOLETIM DE SERVIÇOS</a></li>
+	  			<li><a href="#">COMUNICAÇÃO</a></li>
+  			</ul>
+  		</div>
+
+  		<div id="portal-mural">
+  			<div class="box" id="portal-aviso">
+  				<div id="banner-aviso">
+	  				<div class="aviso-box">
+	  					<a href="#"><img src="static/img/300x250.gif" alt="" /></a>
+	  					<div class="floater"></div>
+	  				</div>
+	  				<div class="aviso-box">
+	  					<a href="#"><img src="static/img/300x250.gif" alt="" /></a>
+	  					<div class="floater"></div>
+	  				</div>
+	  				<div class="aviso-box">
+	  					<a href="#"><img src="static/img/300x250.gif" alt="" /></a>
+	  					<div class="floater"></div>
+	  				</div>
+  				</div>
+  			</div>
+  			<div class="box" id="img-destaque"><div class="label-mural">MURAL</div>
+          <a href="#"><img src="static/img/img-mural-1.gif"/></a>
+          <a href="#"><img src="static/img/img-mural-2.gif"/></a>
+          <a href="#"><img src="static/img/img-mural-3.gif"/></a>
+          <a href="#"><img src="static/img/img-mural-4.gif"/></a>
+        </div>
+  			<div class="box-last" id="noticia-destaque"><div class="label-mural" >NOTÍCIAS</div>
+          <p class="noticia">
+            <img src="static/img/img-noticia-1.gif"/>UFOPA usará notas do ENEM no processo Seletivo 2015<br/><a href="#">Leia mais</a></p>
+          <p class="noticia">
+            <img src="static/img/img-noticia-2.gif"/>UFOPA usará notas do ENEM no processo Seletivo 2015<br/><a href="#">Leia mais</a></p>
+          <p class="noticia">
+            <img src="static/img/img-noticia-3.gif"/>UFOPA usará notas do ENEM no processo Seletivo 2015<br/><a href="#">Leia mais</a></p>
+          <div class="mais-noticias"><a href="#">MAIS NOTÍCIAS...</a></div>
+        </div>
+  		</div>
+  		<div id="portal-agenda">
+  			<div id="calendario" class="box">
+            <div class="label-mural">AGENDA</div>
+              <div class="larg">
+                <div class="calendar" data-color="normal"></div>
+              </div>
+            </div>
+            <div class="box">
+                <div class="label-mural">Outros informes</div>
+            </div>
+            <div id="outros" class="box-last">
+              <div class="label-mural">UNIDADES ACADÊMICAS</div>
+            </div>
+  		</div>
+      <div id="portal-rodape">
+        <div class="box-rodape">
+          <div class="label-rodape">CONTATO</div>
+          <ul id="rodape-contato">
+            <li><a href="#">E-mails</a></li>
+            <li><a href="#">Contatos telefônicos</a></li>
+          </ul>
+        </div>
+        <div class="box-rodape">
+          <div class="label-rodape">INFORMAÇÕES</div>
+          <div id="rodape-informacoes">
+            <ul>
+              <li><a href="#">SIC - Serviço de informação ao cidadão</a></li>
+              <li><a href="#">Perguntas frequentes</a></li>
+              <li><a href="#">Mapa do Site</a></li>
+              <li><a href="#">Acessibilidade</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="box-rodape-last">
+          <div class="label-rodape">REDES SOCIAIS</div>
+          <div id="rodape-rede-social">
+            <ul><li><a href="#">Icons Redes Sociais</a></li></ul>
+          </div>
+        </div>
+        <div id="endereco">Universidade Fedral do Oeste do Pará - UFOPA</div>
+      </div>
+  	</div>
+    
+    <!-- JS Referência -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--<script src="static/js/bootstrap.min.js"></script>-->
+
+  </body>
 </html>

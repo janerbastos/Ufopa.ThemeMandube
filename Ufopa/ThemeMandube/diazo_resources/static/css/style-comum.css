@@ -1,0 +1,305 @@
+* {
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans', Tahoma, Verdana, Arial !important;
+    font-style: normal !important;
+    font-size: 13px !important;
+	margin: 0;
+}
+
+.box{
+    float: left;
+    width: 300px;
+    min-height: 250px;
+    margin-right: 20px;
+    border: 0px solid #fff;
+    /*background: #ccc;*/
+}
+
+.box-last{
+    display: inline-block;
+    width: 300px;
+    min-height: 250px;
+    margin-right: 0px;
+    border: 0px solid #fff;
+    /*background: #ccc;*/
+}
+
+.box-agenda{
+    float: left;
+    width: 300px;
+    min-height: 223px;
+    margin-right: 20px;
+    border: 0px solid #fff;
+    background: #eee;
+}
+
+.box-agenda-last{
+    float: left;
+    width: 300px;
+    min-height: 223px;
+    margin-right: 0px;
+    border: 0px solid #fff;
+    background: #eee;
+}
+
+.box-rodape{
+    float: left;
+    width: 290px;
+    min-height: 150px;
+    margin-right: 20px;
+    border: 0px solid #fff;
+    /*background: #eee;*/
+}
+
+.box-rodape-last{
+    float: left;
+    width: 295px;
+    min-height: 150px;
+    margin-right: 0px;
+    border: 0px solid #fff;
+    /*background: #eee;*/
+}
+
+.box-two-colum{
+    float: left;
+    width: 620px;
+    min-height: 250px;
+    margin-right: 20px;
+    border: 0px solid #fff;
+    background: #eee;
+}
+
+.label-mural{
+	font-size: 14px;
+	padding: 0 0 8px 0;
+	color: #94af40;
+	font-weight: bold;
+    background-color: #e6e6e6;
+}
+
+.label-rodape{
+	font-size: 13px;
+	padding: 0 0 8px 0;
+	color: #fff;
+	font-weight: bold;
+}
+
+p.noticia{
+	margin: 2px 0 4px 0;
+	overflow: auto;
+	color: #52683c;
+}
+
+p.noticia a{
+	color: #94af40;
+	text-decoration: none;
+}
+
+.mais-noticias{
+	text-align: center;
+	background: #f0f0f0;
+	margin-top: 2px;
+}
+
+.mais-noticias a{
+	text-decoration: none;
+	color: #6e7f5f;
+}
+
+.noticia img{
+	float: left;
+	margin-right: 5px;
+}
+
+#portal-container{
+	max-width: 970px;
+	/*border: 2px solid #e6e6e6;*/
+	background: #e6e6e6;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	padding: 0 15px 0px 15px;
+}
+
+#portal-header {
+  background: url("img/banner-ufopa.png") no-repeat scroll 0 27px #E6E6E6;
+  margin-top: -20px;
+}
+
+#portal-globalnav {
+  margin-top: -65px;
+}
+
+#portal-mainmenu{
+	/*background: #94af40;*/
+	/*border: 1px solid #fff;*/
+	min-height: 60px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+#breadcrumbs{
+    margin-bottom: 5px;
+}
+
+#portal-breadcrumbs {
+  font-size: 100%;
+}
+
+#portal-conteudo{
+	margin-bottom: 20px;
+	/*border: 1px solid #4c4b2f;*/
+}
+
+#login_form{
+    width: 365px;
+    margin: 0 auto;
+    background: #94af40;
+    padding: 5px;
+}
+
+.field input[type="text"], .field input[type="password"]{
+    width: 200px !important;
+}
+
+#login-forgotten-password{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div.formControls{
+    text-align: right;
+}
+
+#portal-destaque{
+	/*background: #94af40; */
+	min-height: 300px;
+	margin-bottom: 20px;
+	/*border: 2px solid #4c4b2f;*/
+    overflow: hidden;
+}
+
+#portal-menu{
+	float: right;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	width: 140px;
+	background: #94af40;
+	list-style-type: none;
+    display: block;
+}
+
+#portal-menu li{
+    border-bottom: 2px solid #e6e6e6;
+    margin: auto;
+    padding: 4px 8px;
+    display: block;
+    font-size: 12px;
+}
+
+#portal-menu li a{
+	text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+    line-height: normal;
+}
+
+#portal-mural{
+	min-height: 250px;
+	/*background: #94af40;*/
+	margin-bottom: 20px;
+	/*border: 2px solid #4c4b2f;*/
+    overflow: hidden;
+}
+
+#img-destaque, #noticia-destaque{
+    padding: 0;
+}
+
+#img-destaque img{
+	border: 0;
+	width: 145px;
+	height: 107px;
+	padding: 0;
+    margin: 0;
+}
+
+#img-destaque li:nth-child(1) img{
+    margin-right: 6px;
+    margin-bottom: 11px;
+}
+
+#img-destaque li:nth-child(2) img{
+    margin-bottom: 11px;
+}
+
+#img-destaque li:nth-child(3) img{
+   margin-right: 6px;
+}
+
+/*
+#img-destaque li:first-child img{
+   margin-right: 7px;
+   margin-bottom: 0;
+}
+
+#img-destaque li:last-child img{
+   margin-left: 7px;
+   margin-top: 11px;
+}
+*/
+
+
+#portal-agenda{
+	min-height: 250px;
+	/*background: #94af40;*/
+	margin-bottom: 20px;
+	/*border: 2px solid #4c4b2f;*/
+}
+
+#portal-rodape{
+	min-height: 200px;
+	background: #94af40;
+	margin-bottom: 0px;
+	border: 1px solid #fff;
+	color: #fff !important;
+	padding: 10px;
+	overflow: hidden;
+}
+
+#portal-rodape a{
+	color: #fff !important;
+	text-decoration: underline !important;
+}
+
+#portal-rodape p{
+	margin: 0 0 5px 0 !important;
+}
+
+#rodape-informacoes ul{
+	list-style: none !important;
+	padding: 0;
+	margin: 0;
+}
+
+#rodape-informacoes li, #rodape-contato li{
+	padding: 0 0 5px 0 !important;
+    display: block !important;
+}
+
+#endereco{
+	padding: 10px;
+	border-top: 1px solid #fff;
+	text-align: center;
+	clear: both;
+}
+
+#rodape-rede-social ul a{
+  margin-right: 10px;
+}

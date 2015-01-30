@@ -1,0 +1,138 @@
+#banner-slide{
+	background: #947a02;
+	width: 780px
+}
+
+#portal-banner{
+	border-right: 0px solid #4c4b2f;
+	float: left;
+	}
+
+#portal-banner a{
+	color:#fff;
+	background-color:#947a02;
+    font-weight: bold;
+	}
+
+#portal-banner a, #portal-banner ul, #portal-banner img{
+	margin:0;
+	padding:0;
+	border:none;
+	outline:none;
+	list-style:none;
+	text-decoration:none;
+	}
+
+#portal-banner h1, #portal-banner h2, #portal-banner h3, #portal-banner h4, #portal-banner h5, #portal-banner h6{
+	margin: 0 0 10px 0;
+	padding:0 0 8px 30px;
+	line-height:normal;
+	font-size: 28px;
+	font-weight:normal;
+	color: #fff;
+	}
+
+.banner_box{
+	position:relative;
+	display:block;
+	}
+
+.banner_box img{
+	display:block;
+	float:left;
+	width:400px;
+	height:300px;
+	}
+
+.banner_box .floater{
+	display:inline;
+	float:right;
+	width:380px;
+    padding-top: 60px;
+	}
+
+.banner_box p{
+	margin:0 0 2px 0;
+	padding: 0 15px 5px 30px;
+	line-height:1.6em;
+    text-align: justify;
+    color: #fff;
+	}
+
+.banner_box p.readmore{
+	display:block;
+	/*width:100%;*/
+	margin:0 0 0 -18px;
+	padding-right: 15px;
+	text-align:right;
+	line-height:normal;
+	text-transform:uppercase;
+	}
+
+.banner_box p a {
+	border-bottom: 2px solid #fff !important;
+}
+
+/* ----------------------------------------------Navigation Buttons-------------------------------------*/
+
+/*
+
+Navigation dynamically created using: jquery.cycle.setup.js and jquery.cycle.min.js
+
+HTML Output:
+
+<div id="fsn">
+  <ul id="fs_pagination">
+    <li><a href="javascript:void()">1</a></li>
+    <li><a href="javascript:void()">2</a></li>
+    <li><a href="javascript:void()">3</a></li>
+    <li><a href="javascript:void()">4</a></li>
+    <li><a href="javascript:void()">5</a></li>
+  </ul>
+</div>
+
+*/
+
+#fsn{
+	/*position:relative;*/
+	/*margin:10px 0 -5px;*/
+	/*display:block;*/
+	/*width:780px;*/
+	height: 25px;
+	text-align:center;
+	z-index:1000;
+	}
+
+#fsn ul{
+	position:relative;
+	margin:0 auto 0;
+	display:block;
+	width:125px;
+	height:20px;
+	padding:5px 0 0 0;
+	overflow:hidden;
+	list-style:none;
+	}
+
+#fsn ul li, #fsn ul li a{
+	display:block;
+	float:left;
+	width:15px;
+	height:15px;
+	margin:0 10px 0 0;
+	padding:0;
+	}
+
+#fsn ul li a{
+	float:none;
+	border:none;
+	margin:0;
+	outline:none;
+	text-indent:-5000px;
+	text-decoration:none;
+	background:url("../img/slide.png") 50% 50% no-repeat;
+	}
+
+#fsn .activeSlide{
+	background:url("../img/slide.png") 0% 50% no-repeat;
+	}
