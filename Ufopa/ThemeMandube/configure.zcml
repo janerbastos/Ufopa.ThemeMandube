@@ -10,7 +10,7 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="Projeto thema"
+      title="Ufopa Tema Mandube"
       directory="profiles/default"
       description="Extension profile for Projeto thema"
       provides="Products.GenericSetup.interfaces.EXTENSION"
