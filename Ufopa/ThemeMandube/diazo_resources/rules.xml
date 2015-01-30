@@ -8,7 +8,7 @@
 
     <!-- The default theme, used for standard Plone web pages -->
     <theme href="index.html" css:if-content=".section-front-page" />
-    <theme href="comum.html" css:if-not-content=".section-front-page" />
+    <!--<theme href="comum.html" css:if-not-content=".section-front-page" /> -->
     <notheme if-path="@@manage-viewlets" />
     <notheme if-path="@@overview-controlpanel" />
     <notheme if="$ajax_load" />
@@ -32,7 +32,7 @@
         <drop css:content="lisnk[href$='mobile.css']" />
         <drop css:content="link[href*='base']" />
         <drop css:content="link[href$='favicon.ico']" />
-        
+
         <before content="/html/head/meta" css:theme="meta[name='viewport']" />
         <before content="/html/head/base" theme="/html/head/title" />
         <replace theme='/html/head/title' content='/html/head/title' />
