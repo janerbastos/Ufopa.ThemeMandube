@@ -1,0 +1,14 @@
+README.txt
+setup.cfg
+setup.py
+Ufopa/__init__.py
+Ufopa.ThemeMandube.egg-info/PKG-INFO
+Ufopa.ThemeMandube.egg-info/SOURCES.txt
+Ufopa.ThemeMandube.egg-info/dependency_links.txt
+Ufopa.ThemeMandube.egg-info/entry_points.txt
+Ufopa.ThemeMandube.egg-info/namespace_packages.txt
+Ufopa.ThemeMandube.egg-info/not-zip-safe
+Ufopa.ThemeMandube.egg-info/requires.txt
+Ufopa.ThemeMandube.egg-info/top_level.txt
+Ufopa/ThemeMandube/__init__.py
+Ufopa/ThemeMandube/interfaces.py
