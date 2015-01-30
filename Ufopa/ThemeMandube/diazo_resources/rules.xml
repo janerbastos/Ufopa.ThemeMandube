@@ -8,14 +8,15 @@
     <!-- Apply the following rules to standard Plone pages -->
 
     <!-- The default theme, used for standard Plone web pages -->
-    <theme href="index.html" />
+    
     <!--<theme href="comum.html" css:if-not-content=".section-front-page" /> -->
     <notheme if-path="@@manage-viewlets" />
     <notheme if-path="@@overview-controlpanel" />
     <notheme if="$ajax_load" />
 
     <rules css:if-content="#visual-portal-wrapper">
-
+        <theme href="index.html"/>
+        
         <!-- Add meta tags -->
         <drop css:theme="meta[http-equiv='Content-Type']" />
         <drop css:content="meta[name='viewport']" />
