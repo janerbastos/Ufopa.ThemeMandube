@@ -11,9 +11,7 @@
     
     <!--<theme href="comum.html" css:if-not-content=".section-front-page" /> -->
     <theme href="index.html"/>
-    <notheme if-path="@@manage-viewlets" />
-    <notheme if-path="@@overview-controlpanel" />
-    <notheme if="$ajax_load" />
+
 
     <rules css:if-content="#visual-portal-wrapper">
         <!-- Add meta tags -->
