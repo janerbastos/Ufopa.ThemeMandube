@@ -9,6 +9,8 @@ body{
     font-style: normal !important;
     font-size: 13px !important;
 	margin: 0;
+    padding: 0;
+    background: url("../img/bg02.jpeg");
 }
 
 .box{
@@ -117,7 +119,7 @@ p.noticia a{
 }
 
 #portal-container{
-	max-width: 970px;
+	/*max-width: 970px;*/
 	/*border: 2px solid #e6e6e6;*/
 	background: #e6e6e6;
 	margin: 0 auto;
@@ -255,7 +257,6 @@ div.formControls{
 }
 */
 
-
 #portal-agenda{
 	min-height: 250px;
 	/*background: #94af40;*/
@@ -303,3 +304,44 @@ div.formControls{
 #rodape-rede-social ul a{
   margin-right: 10px;
 }
+
+
+@media (min-width: 801px) and (max-width: 1280px){
+    #portal_footer, #portal_header, #portal-container{
+      width: 76%;
+    }
+
+     #bbrasil .barra ul {
+        margin: 0 15% 0 0 !important;
+    }
+}
+
+
+@media (min-width: 1920px){
+
+    #portal_footer, #portal_header, #portal-container{
+      width: 55%;
+    }
+
+    #portal-menu{
+        width: 23%;
+    }
+
+    #bbrasil .barra ul {
+        margin: 0 24% 0 0 !important;
+    }
+
+}
+
+@media (max-width: 360px){
+
+    #portal-banner{
+        display: none;
+    }
+
+    #portal-menu{
+        width: 100%;
+    }
+
+}
+

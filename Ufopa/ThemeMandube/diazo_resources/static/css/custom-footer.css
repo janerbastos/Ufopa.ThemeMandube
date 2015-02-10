@@ -1,0 +1,239 @@
+
+h1 { font-size: 1.5em; }
+
+/* Custom Servio */
+/*  barra brasil-inicio - arquivos:ai.png,brasil1.png,bbrasil.png, bbrasil.gif ; */
+#bbrasil .informacao {
+    background: url("../img/bbrasil/ai.png") no-repeat scroll 0 4px #004b82;
+    display: block;
+    height: 27px;
+    text-indent: -1000px;
+    width: 161px;
+}
+
+#bbrasil .brasil {
+    background: url("../img/bbrasil/brasil1.png") no-repeat scroll 0 4px #004b82;
+    display: block;
+    height: 27px;
+    text-indent: -1000px;
+    width: 108px;
+}
+
+#bbrasil a:hover {
+    border: medium none;
+}
+
+
+#bbrasil {
+    background: url("../img/bbrasil/bbrasil.png") no-repeat scroll center bottom #004b82;
+    
+    overflow: hidden;
+    position: relative;
+}
+
+#bbrasil .barra {
+    background: url("../img/bbrasil/bbrasil.gif") repeat-x scroll 0 bottom rgba(0, 0, 0, 0);
+    display: block;
+    height: 28px;
+    margin: 0 auto;
+    
+}
+
+#bbrasil .barra ul {
+    float: right;
+    margin: 0 5% 0 0;
+    padding: 0;
+    width: 319px;
+}
+
+#bbrasil .barra ul li {
+    float: left;
+    list-style-type: none;
+    padding-left: 25px;
+}
+
+/*  barra brasil-fim */
+
+/* Footer início */
+
+#portal_footer, #portal_header{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+footer {
+  padding: 10px ;
+  background-image: url("../img/bg01.jpeg");
+  color: #fff;
+  overflow: hidden;
+}
+
+#footer_cont {
+  float: left;
+  width: 31%;
+}
+
+#footer_inf {
+  width: 38%;
+  float: left;  
+}
+
+#footer_sociais{
+  width: 31%;
+  float: right;
+}
+
+#footer_end{
+  width: 100%;
+  float: left;  
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li a {
+  width: auto;
+  color: #fff;
+}
+
+footer ul li a:hover{
+  color:#0c6005;
+}
+
+#sociais a {
+  padding-left: 5px; 
+}
+
+#sociais {
+   margin-top: 10px;
+}
+
+footer img {
+    width: 10%;
+}
+
+#test{
+    width: 35%;
+}
+
+/* Para resoluções até 767px */
+@media  (max-width: 509px) {
+
+    #footer_cont, #footer_inf, #footer_sociais{
+        width: 100%;
+    }
+
+    #footer_inf, #footer_sociais{
+        margin-top: 10px;
+    }
+
+    #footer_cont {
+        float: left;
+    }
+
+    #footer_inf {
+        float: right;    
+    }
+
+    #footer_sociais{
+        float: left;
+    }
+
+    #footer_end{
+        width: 100%;
+        float: left;
+    }
+
+}
+
+@media (min-width: 510px) and (max-width: 767px) {
+  
+    #footer_cont, #footer_inf, #footer_sociais{
+        width: 50%;
+    }
+
+    #footer_inf, #footer_sociais{
+        
+    }
+
+    #footer_cont {
+      float: left;
+    }
+
+    #footer_inf {
+      float: right;
+    }
+      
+    #footer_sociais{
+      float: left;
+      margin-top: 10px;
+    }
+
+    #footer_end{
+      width: 100%;
+      float: left;
+    }
+
+}
+
+/* Table */
+/* Para resoluções  de 768 a 1199px */
+
+@media (min-width: 768px) and (max-width: 1199px){
+    
+    #footer_cont {
+      float: left;
+      width: 28%;
+    }
+    
+    #footer_inf {
+      width: 44%;
+      float: left;
+    }
+    
+    #footer_sociais{
+      width: 28%;
+      float: right;
+    }
+
+    #footer_end{
+      width: 100%;
+      float: left;
+    }
+}
+
+/* Para resoluções a partir de 1200px */
+
+@media (min-width: 1200px){
+
+    #footer_end{
+      width: 100%;
+      float: left;
+    }
+
+    #test{
+      width: 25%;
+    }
+
+    footer img {
+        width: 7%;
+    }
+ }
+
+#footer_cont, #footer_inf, #footer_sociais{
+  font-size: 1.4em;
+}
+
+#footer_end{
+  font-size: 0.9em;
+}
+
+/*mudança footer - fim*/
+
+
+/* Servio	*/
+
+

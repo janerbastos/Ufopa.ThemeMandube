@@ -8,11 +8,20 @@
     <title>Universidade Federal do Oeste do Pará</title>
 
     <!-- CSS Referência -->
-    <link href="css/style-comum.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="static/css/banner-slide.css" rel="banner"  />
     <link rel="stylesheet" type="text/css" href="static/css/aviso-slide.css" rel="banner" />
     <link rel="stylesheet" type="text/css" href="static/css/calendar.min.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/style-comum.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/custom-footer.css" />
+
+    <!-- Rafael -->
+    <link rel="stylesheet" href="static/css/custom-header.css" />
+    <link rel="stylesheet" href="static/css/fonts.css">
+
+        <!-- Rafael -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="static/js/main.js"></script>
 
     <!-- JavaScript Referência -->
     <script type="text/javascript" src="static/js/jquery-1.11.1.min.js" /></script>
@@ -32,9 +41,56 @@
   </head>
   <body>
 
+    <!-- Barra do Governo -->
+
+    <div id="bbrasil">
+      <div class="barra">
+        <div class="container">
+          <ul>
+            <li>
+              <a class="informacao" title="Acesso à informação" href="http://www.acessoainformacao.gov.br"></a>
+            </li>
+            <li>
+              <a class="brasil" title="Portal de Estado do Brasil" href="http://www.brasil.gov.br"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- end barra gov -->
+
+    <div id="portal_header">
+    <!-- Custom Rafael -->
+      <div id="portal-topo">
+        <div id="portal-logo">
+        </div>
+        <div id="texto-topo">
+          <h1>UNIVERSIDADE FEDERAL DO OESTE DO PARÁ</h1>
+        </div>
+      </div> <!-- portal-topo -->
+      <div id="menu">
+        <div class="menu_bar">
+          <a href="#" class="bt-menu"><span class="icon-menu"></span>Menu</a> <!-- Utiliza o arquivo fonts.css para fixar o icone do menu -->
+        </div>
+        <nav>
+          <ul>
+            <li class="selected"><a href="#">INSTITUCIONAL</a></li>
+            <li><a href="#">GRADUAÇÃO</a></li>
+            <li><a href="#">PÓS-GRADUAÇÃO</a></li>
+            <li><a href="#">PESQUISA E INOVAÇÃO</a></li>
+            <li><a href="#">EXTENSÃO E CULTURA</a></li>
+            <li><a href="#">ACESSO À INFORMAÇÃO</a></li>
+          </ul>
+        </nav>
+      </div><!-- menu -->
+
+    <!-- Rafael -->
+    </div><!-- portal-area-->
+
   	<div id="portal-container">
-  		<div id="portal-mainmenu">Portal Main Menu</div>
-  		<div id="portal-destaque">
+  		
+      <div id="portal-destaque">
   			<div id="portal-banner">
 				<div id="banner-slide">
 		            <div class="banner_box"><img src="static/img/400x300.jpg" alt="" />
@@ -99,6 +155,7 @@
           <div class="mais-noticias"><a href="#">MAIS NOTÍCIAS...</a></div>
         </div>
   		</div>
+
   		<div id="portal-agenda">
   			<div id="calendario" class="box">
             <div class="label-mural">AGENDA</div>
@@ -113,34 +170,70 @@
               <div class="label-mural">UNIDADES ACADÊMICAS</div>
             </div>
   		</div>
-      <div id="portal-rodape">
-        <div class="box-rodape">
-          <div class="label-rodape">CONTATO</div>
-          <ul id="rodape-contato">
-            <li><a href="#">E-mails</a></li>
-            <li><a href="#">Contatos telefônicos</a></li>
-          </ul>
-        </div>
-        <div class="box-rodape">
-          <div class="label-rodape">INFORMAÇÕES</div>
-          <div id="rodape-informacoes">
-            <ul>
-              <li><a href="#">SIC - Serviço de informação ao cidadão</a></li>
-              <li><a href="#">Perguntas frequentes</a></li>
-              <li><a href="#">Mapa do Site</a></li>
-              <li><a href="#">Acessibilidade</a></li>
+    </div>
+
+    <!-- Custom Servio -->
+    <div id="portal_footer">
+    <!-- footer início -->
+        <footer>
+            <div  id="footer_cont">
+              <strong>CONTATO</strong>
+                <ul class="unstyled" >
+                  <li><a href="#">E-mails</a></li>
+                  <li><a href="#">Contatos telefônicos</a></li>
+                </ul>
+            </div>
+
+            <div  id="footer_inf">
+              <strong>INFORMAÇÕES</strong>
+             <ul class="unstyled">
+                <li><a href="">SIC-Serviço de informação ao cidadão</a></li>
+                <li><a href="">Perguntas frequentes</a></li>
+                <li><a href="">Mapa do site</a></li>
+                <li><a href="">Acessibilidade</a></li>
               </ul>
-          </div>
-        </div>
-        <div class="box-rodape-last">
-          <div class="label-rodape">REDES SOCIAIS</div>
-          <div id="rodape-rede-social">
-            <ul><li><a href="#">Icons Redes Sociais</a></li></ul>
-          </div>
-        </div>
-        <div id="endereco">Universidade Fedral do Oeste do Pará - UFOPA</div>
-      </div>
-  	</div>
+            </div>
+            <div id="footer_sociais">
+              <strong>REDES SOCIAIS</strong>
+
+                <div id="sociais">     
+                  <a title="E-Mail" href="https://mail.ufopa.edu.br/" target="_blank">
+                    <img src="static/img/footer/emailpeq2.png">
+                  </a>
+
+                  <a title="Facebook" href="http://www.facebook.com/ufopa" target="_blank">
+                    <img src="static/img/footer/facebookpeq.png">
+                  </a>
+                         
+                  <a title="Twitter" href="http://www.twitter.com/ufopa" target="_blank">
+                    <img src="static/img/footer/twitterpeq.png">
+                  </a>
+                
+                  <a title="YouTube" href="http://www.youtube.com/user/comunicaufopa" target="_blank">
+                    <img src="static/img/footer/youtubepeq.png">
+                  </a>
+       
+                  <a title="Google +" href="http://www.ufopa.edu.br/sigufopa/" target="_blank">
+                    <img src="static/img/footer/emailpeq.png">
+                  </a> <br>
+                  
+                  <a title="Radio UFOPA" href="http://www.ufopa.edu.br/sigufopa/" target="_blank">
+                    <img id="test"   src="static/img/footer/radiopeq.png">
+                  </a>
+                </div>  
+              </div>  
+              <div id="footer_end"> 
+                  <hr color="#fff" style="margin: 10px 0; border: 0; border-bottom: 1px solid ;">    
+                  
+                  <p style="font-size: 13px; font-weight: bold; text-align: center;"> Universidade Federal do Oeste do Pará - UFOPA </p>
+                  <p style="text-align: center;" id="portal-endereco">Reitoria: Av.Mendonça Furtado, nº 2946 - Câmpus Amazônia | Bairro Fátima | CEP 68040-470 | E-mail: reitoria@ufopa.edu.br | Santarém, Pará, Brasil<br/>
+                    &copy; UFOPA/COMUNICAÇÃO/CTIC-2015</p>
+                  </p>
+              </div>
+          
+        </footer>
+    </div>
+    <!-- Servio -->
     
     <!-- JS Referência -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

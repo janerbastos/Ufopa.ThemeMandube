@@ -1,0 +1,221 @@
+
+
+/* Custom Rafael */
+
+
+#portal_header{
+    margin-bottom: 20px;
+}
+
+/* Início Topo
+=================================*/
+#portal-topo{
+	border: 0px solid green;
+	height: 220px;
+	background: url("../img/bg01.jpeg");
+	margin-top: 0px;
+}
+
+#portal-logo{
+	margin-top: 5px;
+	border: 0px solid black;
+	width: 20%;
+	height: 210px;
+	float: left;
+	background: url("../img/logo.png") no-repeat center center;
+
+	
+}
+
+#texto-topo h1{
+	float: left;
+	color: white;
+}
+
+/* Fim topo 
+==================================*/
+
+/* Início do Menu 
+=====================================*/
+ 
+.menu_bar {
+	display:none;
+	position: relative;
+}
+ 
+#menu {
+	width: 100%;
+}
+ 
+#menu nav {
+	background: url("../img/bg04.png"); /* Fundo do menu */
+	/*border: 2px solid #ccc;*/
+	z-index:120;
+	width:100%;
+	margin:0px auto; /* Deixa o menu centralizado - está a 5px do topo e está centralizado */
+	
+}
+
+#menu nav ul{
+
+}
+ 
+#menu nav ul li {
+	display:inline-block;
+	position: relative;
+}
+ 
+#menu nav ul li a {
+	color: #52683c; /* Cor dos links do menu */
+	display:block;
+	text-decoration:none; /* Tira o sublinhado */
+	padding: 10px; /* Altura de uma linha para outra */
+}
+
+#menu nav ul li a:hover {
+	background: #a7a7a8; /* cor do link ao passar o mouse por cima */
+	color: #fff !important;
+	font-weight: bold;
+}
+
+.selected, .selected > a {
+	background: #a7a7a8;
+	color: #fff !important;
+}
+ 
+#menu nav ul li a span {
+	margin-right: 20px; /* Distância de um link do menu para o outro*/
+}
+  
+@media screen and (max-width: 991px) { /* Até 767px o menu aparecerá em formato de botão*/
+
+	#portal-topo{
+		height: 225px;
+	}
+ 
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: relative;
+		top:0;
+		background: url("../img/bg04.png"); /* Cor de fundo do menu */
+	}
+ 
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 5px;
+		color: #8d9981; /* Cor do botão do menu */
+		overflow: hidden;
+		font-size: 2em;
+		font-weight: bold;
+		text-decoration: none;
+	}
+ 
+	.menu_bar span {
+		float: right;
+		font-size: 1.5em; /* influencia o tamanho do botão do menu, quando visível*/
+	}
+ 
+	#menu nav { /* Quando visível o menu ocupará 50% da página */
+		width: 50%;
+		position: fixed;
+		right:100%;
+		margin-top: 0;
+		overflow: scroll;
+	}
+ 
+	#menu nav ul li {
+		display: block;
+		border-bottom: 1px solid #8d9981;
+
+	}
+ 
+	#menu nav ul li a {
+		display: block;
+		font-size: 1em;
+	}
+}
+
+/* Fim do Menu 
+==================================*/
+
+
+@media (max-width: 360px){
+	#portal-topo{
+		height: 50px;
+	}
+
+	#portal-logo{
+		background: url("../img/logo-sx.png") no-repeat center center;
+		height: 40px;
+		display: block;
+		width: 20%;
+	}
+
+	#texto-topo h1{
+		font-size: 0.8em;
+		padding-top: 6%;
+	}
+
+	#menu nav ul li a{
+		font-size: 1em;
+	}
+
+
+}
+
+@media (min-width: 361px) and (max-width: 767px){ /* Tablet */
+	#portal-topo{
+		height: 135px;
+	}
+
+	#portal-logo{
+		background: url("../img/logo361-767.png") no-repeat center center;
+		height: 130px;
+		display: block;
+		width: 30%;
+	}
+	
+}
+
+@media (min-width: 768px) and (max-width: 991px){ /* Tablet */
+	#portal-logo{
+		background: url("../img/logo.png") no-repeat center center;
+		height: 220px;
+		display: block;
+		width: 30%;
+	}
+	#texto-topo h1{
+		font-size: 1.6em;
+		padding-top: 12%;
+	}
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px){ /* Desktop */
+	
+	#menu nav ul li a{
+		font-size: 1em;
+	}
+
+	#texto-topo h1{
+		font-size: 2em;
+		padding-top: 8%;
+	}
+}
+
+@media (min-width: 1200px){ /* Desktop's maiores ou TV's*/
+	
+	#menu nav ul li a{
+		font-size: 1em;
+	}
+	
+	#texto-topo h1{
+		font-size: 2.5em;
+		padding-top: 8%;
+	}
+}
+
+/* Rafael	*/
+
+
